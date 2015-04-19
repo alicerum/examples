@@ -12,6 +12,7 @@ public class Service extends Application
 
     public  Service() {
         services.add(RestService.class);
+        services.add(JacksonConfiguration.class);
     }
 
     @Override
