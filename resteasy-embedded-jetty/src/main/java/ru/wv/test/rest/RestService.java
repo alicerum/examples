@@ -17,6 +17,18 @@ public class RestService {
     @Produces(MediaType.APPLICATION_XML)
     public List<User> echo(@QueryParam("n") String name,
                            @QueryParam("a") int age) {
+        return user(name,age);
+    }
+
+    @GET
+    @Path("/echo/json")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<User> echoJson(@QueryParam("n") String name,
+                               @QueryParam("a") int age) {
+        return user(name, age);
+    }
+
+    private List<User> user(String name, int age) {
         User user = new User();
         user.setName(name);
         user.setAge(age);
