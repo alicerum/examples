@@ -1,0 +1,17 @@
+*.iml
+*.ids
+*.ipr
+*.iws
+.idea
+.classpath
+.settings
+.project
+/build
+/*/build
+/target
+/*/target
+/log
+/*/log
+test-output
+/mw.config
+/.integration-scripts
